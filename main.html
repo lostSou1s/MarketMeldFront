@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Главная страница</title>
+</head>
+<body>
+  <header class="fixed-header">
+    <div class="logo">Логотип</div>
+    <div class="search-bar">
+      <input type="text" id="search-input" placeholder="Найти товары...">
+    </div>
+    <div class="nav-buttons">
+        <search-button id="search-button">
+        <img src="love.png" alt="Личный кабинет" class="profile-button" width="77" height="77">
+      </search-button>
+      <search-button id="search-button">
+        <img src="profile-user.png" alt="Личный кабинет" class="profile-button" width="77" height="77">
+      </search-button>
+    </div>
+  </header>
+  <div class="content">
+    <div class="container">
+      <div class="side-panel">
+        <h3>Фильтры</h3>
+        <div class="price-filter">
+          <label for="min-price">Цена: от</label>
+          <input type="number" id="min-price" placeholder="мин" step="100">
+          <label for="max-price">до</label>
+          <input type="number" id="max-price" placeholder="макс" step="100" >
+        </div>
+        <select id="sort-by">
+          <option value="price-asc">Цена (по возрастанию)</option>
+          <option value="price-desc">Цена (по убыванию)</option>
+          <option value="popularity">Популярность</option>
+          <option value="rating">Рейтинг</option>
+        </select>
+      </div>
+      <main id="product-list">
+        <div class="product-card">
+          <div class="images">
+              <div class="images">
+                  <div class="image">
+                    <img src="watch1.png" alt="Название товара 1">
+                    <div class="details">
+                      <p class="price">WB: 2000р</p>
+                      <p class="rating">Рейтинг: 4.8</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="watch1.png" alt="Название товара 2">
+                    <div class="details">
+                      <p class="price">Ozoon: 2520р</p>
+                      <p class="rating">Рейтинг: 4.5</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="images">
+              <div class="images">
+                  <div class="image">
+                    <img src="smart_watch.png" alt="Название товара 1">
+                    <div class="details">
+                      <p class="price">WB: 4589р</p>
+                      <p class="rating">Рейтинг: 4.8</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="smart_watch.png" alt="Название товара 2">
+                    <div class="details">
+                      <p class="price">Ozoon: 3898р</p>
+                      <p class="rating">Рейтинг: 4.5</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+          <div class="product-card">
+          <div class="images">
+              <div class="images">
+                  <div class="image">
+                    <img src="watch2.png" alt="Название товара 1">
+                    <div class="details">
+                      <p class="price">WB: 700р</p>
+                      <p class="rating">Рейтинг: 4.8</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="watch2.png" alt="Название товара 2">
+                    <div class="details">
+                      <p class="price">Ozoon: 800р</p>
+                      <p class="rating">Рейтинг: 4.5</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-card">
+          <div class="images">
+              <div class="images">
+                  <div class="image">
+                    <img src="watch3.png" alt="Название товара 1">
+                    <div class="details">
+                      <p class="price">WB: 4555р</p>
+                      <p class="rating">Рейтинг: 4.8</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                  <div class="image">
+                    <img src="watch3.png" alt="Название товара 2">
+                    <div class="details">
+                      <p class="price">Ozoon: 4678р</p>
+                      <p class="rating">Рейтинг: 4.5</p>
+                      <span class="wishlist-button">❤</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- Остальные карточки товаров -->
+      </main>
+    </div>
+  </div>
+  <footer>
+    <div class="store-info">
+      <h3>Аналитики цен товаров на популярных маркетплейсах</h3>
+      <p>Техническая поддержка: ПроектМечты@gmail.com</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
